@@ -87,7 +87,6 @@ def pasteXlData(thisDict):
             isListBuilt = True
         try:
             for key in individualItem:
-                print(key + individualItem['Description::Id'])
                 ws.cell(currentRow,indexDictionary[key]).value = individualItem[key]
             currentRow += 1
         except KeyError:
